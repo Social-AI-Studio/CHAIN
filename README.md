@@ -10,7 +10,7 @@
 [![Paper](https://img.shields.io/badge/📄-Paper-orange)](#citation)
 [![Code](https://img.shields.io/badge/💻-Code-green)](https://github.com/Social-AI-Studio/CHAIN)
 
-**Authors:** Yihuai Lan\*, Maojia Song\*, Yuhao Wu\*<sup>#</sup>, Lei Wang†, Zhiqiang Hu, Yao Xiao, Heng Zhou, Weihua Zheng, Dylan Raharja, Soujanya Poria†, Roy Ka-Wei Lee†
+Maojia Song\*, Yihuai Lan\*, Yuhao Wu\*<sup>#</sup>, Lei Wang†, Zhiqiang Hu, Yao Xiao, Heng Zhou, Weihua Zheng, Dylan Raharja, Soujanya Poria†, Roy Ka-Wei Lee†
 
 <sup>\*</sup> Equal contribution &nbsp;|&nbsp; <sup>#</sup> Project Leader &nbsp;|&nbsp; <sup>†</sup> Advisor
 
