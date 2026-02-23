@@ -1,0 +1,49 @@
+<robot name="obj_4" version="1.0">
+  <link name="obj_4">
+    <collision name="long-piece-3-collision.001">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/long-piece-3-collision.001.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="long-piece-3-collision.002">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/long-piece-3-collision.002.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="long-piece-3-collision.003">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/long-piece-3-collision.003.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="long-piece-3-collision.004">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/long-piece-3-collision.004.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="long-piece-3-collision.005">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/long-piece-3-collision.005.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00007" ixy="-0.00000" ixz="0.00000" iyy="0.00007" iyz="0.00000" izz="0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.21372 0.18724 0.18000"/>
+      <mass value="0.00500"/>
+    </inertial>
+    <visual name="long-piece-3">
+      <material name="turnarrow"/>
+      <origin rpy="-0.00000 1.57080 0.00000" xyz="-0.20573 0.19053 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/long-piece.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="turnarrow">
+    <color rgba="0.23137 0.44706 0.80000 1.00000"/>
+  </material>
+</robot>

@@ -1,0 +1,73 @@
+<robot name="obj_1" version="1.0">
+  <link name="obj_1">
+    <collision name="obj_1.001">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_0.002.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_1.002">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_1.002.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_1.003">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_2.002.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_1.004">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_3.002.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_1.005">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_4.002.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_1.006">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_5.001.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_1.007">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_6.001.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_1.008">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_7.001.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_1.009">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_8.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00002" ixy="0.00000" ixz="0.00000" iyy="0.00023" iyz="-0.00000" izz="0.00023"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <mass value="0.01000"/>
+    </inertial>
+    <visual name="obj_1_vis">
+      <material name="turnarrow_orange"/>
+      <origin rpy="3.14159 -0.00000 3.14159" xyz="-0.26466 0.24927 0.29151"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_1_LUBAANSUO2.stp.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="turnarrow_orange">
+    <color rgba="0.78824 0.34510 0.00000 1.00000"/>
+  </material>
+</robot>

@@ -1,0 +1,61 @@
+<robot name="obj_2" version="1.0">
+  <link name="obj_2">
+    <collision name="interlocking-puzzle-1-2-collision.001">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.40143 0.49427 0.52211"/>
+      <geometry>
+        <mesh filename="../meshes/obj/interlocking-puzzle-1-2-collision.001.obj" scale="2.09740 2.09740 2.09740"/>
+      </geometry>
+    </collision>
+    <collision name="interlocking-puzzle-1-2-collision.002">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.22013 0.69154 0.43666"/>
+      <geometry>
+        <mesh filename="../meshes/obj/interlocking-puzzle-1-2-collision.002.obj" scale="2.09740 2.09740 2.09740"/>
+      </geometry>
+    </collision>
+    <collision name="interlocking-puzzle-1-2-collision.003">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.41734 0.31180 0.55324"/>
+      <geometry>
+        <mesh filename="../meshes/obj/interlocking-puzzle-1-2-collision.003.obj" scale="2.09740 2.09740 2.09740"/>
+      </geometry>
+    </collision>
+    <collision name="interlocking-puzzle-1-2-collision.004">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.41734 0.67679 0.55324"/>
+      <geometry>
+        <mesh filename="../meshes/obj/interlocking-puzzle-1-2-collision.004.obj" scale="2.09740 2.09740 2.09740"/>
+      </geometry>
+    </collision>
+    <collision name="interlocking-puzzle-1-2-collision.005">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.62760 0.30572 0.44106"/>
+      <geometry>
+        <mesh filename="../meshes/obj/interlocking-puzzle-1-2-collision.005.obj" scale="2.09740 2.09741 2.08984"/>
+      </geometry>
+    </collision>
+    <collision name="interlocking-puzzle-1-2-collision.006">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.62760 0.68289 0.44106"/>
+      <geometry>
+        <mesh filename="../meshes/obj/interlocking-puzzle-1-2-collision.006.obj" scale="2.09740 2.09740 2.08984"/>
+      </geometry>
+    </collision>
+    <collision name="interlocking-puzzle-1-2-collision.007">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.22013 0.29707 0.43666"/>
+      <geometry>
+        <mesh filename="../meshes/obj/interlocking-puzzle-1-2-collision.007.obj" scale="2.09740 2.09740 2.09740"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00516" ixy="0.00000" ixz="-0.00000" iyy="0.00466" iyz="-0.00000" izz="0.00872"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.41734 0.49431 0.52049"/>
+      <mass value="0.03000"/>
+    </inertial>
+    <visual name="interlocking-puzzle-1-2">
+      <material name="Light Blue"/>
+      <origin rpy="3.14159 0.00000 3.14159" xyz="-0.41734 0.49431 0.50346"/>
+      <geometry>
+        <mesh filename="../meshes/obj/interlocking-puzzle-1.001.obj" scale="0.01049 0.01049 0.01049"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="Light Blue">
+    <color rgba="0.15294 0.68627 0.80000 1.00000"/>
+  </material>
+</robot>

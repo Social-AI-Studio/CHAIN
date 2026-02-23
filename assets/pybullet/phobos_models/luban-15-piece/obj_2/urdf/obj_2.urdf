@@ -1,0 +1,55 @@
+<robot name="obj_2" version="1.0">
+  <link name="obj_2">
+    <collision name="long-piece-1-collision.001">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/long-piece-1-collision.001.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="long-piece-1-collision.002">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/long-piece-1-collision.002.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="long-piece-1-collision.003">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/long-piece-1-collision.003.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="long-piece-1-collision.004">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/long-piece-1-collision.004.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="long-piece-1-collision.005">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/long-piece-1-collision.005.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="long-piece-1-collision.006">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/long-piece-1-collision.006.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00000" ixy="0.00000" ixz="0.00000" iyy="0.00007" iyz="0.00000" izz="0.00007"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.20552 0.20693 0.18292"/>
+      <mass value="0.00500"/>
+    </inertial>
+    <visual name="long-piece-1">
+      <material name="turnarrow"/>
+      <origin rpy="-1.57080 0.00000 0.00000" xyz="-0.20552 0.21365 0.17796"/>
+      <geometry>
+        <mesh filename="../meshes/obj/long-piece.001.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="turnarrow">
+    <color rgba="0.23137 0.44706 0.80000 1.00000"/>
+  </material>
+</robot>

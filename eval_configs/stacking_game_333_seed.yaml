@@ -1,0 +1,53 @@
+# Configuration for the Stacking Game Task (3x3x3)
+
+runner:
+  experiment_name: stacking_game_exp1_seed
+  log_dir: "logs"
+  results_excel_path: "experiment_results.xlsx"
+  history_length: 2
+
+agent:
+  type: "openai"
+  model_name: "bytedance-seed/seed-1.6-flash"
+  # API key and base URL are loaded from environment variables (.env file or system export)
+  api_key: null
+  base_url: null
+  temperature: 0.6
+  max_tokens: 128000
+  timeout: 300.0
+
+judgement:
+  type: "openai"
+  model_name: "bytedance-seed/seed-1.6-flash"
+  api_key: null
+  base_url: null
+  temperature: 0.1
+  max_tokens: 4000
+  timeout: 300.0
+
+environment:
+  type: "stacking_game"
+  gui: false
+  render_width: 512
+  render_height: 512
+  multi_view: true
+  load_table: false
+  max_steps: 20
+  puzzle_dir: "assets/stacking_game/puzzles_full_v9"
+  default_size: "3x3x3"
+  default_puzzle_id: "puzzle_001"
+  randomize_on_reset: true
+  init_spacing: 2
+  init_seed: null
+  render_unplaced: true
+
+task:
+  type: "stacking_game"
+  name: stacking_game_exp1_seed
+  difficulty: medium
+  puzzle_size: "3x3x3"
+  puzzle_id: "puzzle_001"
+  ruled_evaluation: true
+  allow_random_puzzle: false
+  init_seed: null
+

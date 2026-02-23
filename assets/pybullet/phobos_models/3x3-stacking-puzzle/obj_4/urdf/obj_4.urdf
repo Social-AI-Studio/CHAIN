@@ -1,0 +1,601 @@
+<robot name="obj_4" version="1.0">
+  <link name="obj_4_link">
+    <collision name="obj_4-collision.001">
+      <origin rpy="3.14159 -1.57080 0.00000" xyz="0.33845 0.22784 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.001.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.002">
+      <origin rpy="3.14159 -1.57080 0.00000" xyz="0.21345 0.10284 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.002.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.003">
+      <origin rpy="0.78540 0.00000 0.00000" xyz="0.27595 0.16909 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.003.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.004">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.22784 0.12696"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.004.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.005">
+      <origin rpy="1.57080 -0.00000 2.35619" xyz="0.33470 0.28659 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.005.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.006">
+      <origin rpy="-3.14159 -0.00000 1.57080" xyz="0.27595 0.22784 0.00196"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.006.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.007">
+      <origin rpy="2.35619 -0.00000 3.14159" xyz="0.27595 0.28659 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.007.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.008">
+      <origin rpy="0.78540 -0.00000 -3.14159" xyz="0.27595 0.28659 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.008.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.009">
+      <origin rpy="0.78540 0.00000 -1.57080" xyz="0.21720 0.22784 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.009.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.010">
+      <origin rpy="1.57080 -0.00000 -2.35619" xyz="0.21720 0.28659 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.010.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.011">
+      <origin rpy="-2.35619 0.00000 1.57080" xyz="0.21720 0.22784 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.011.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.012">
+      <origin rpy="1.57080 0.00000 -0.78540" xyz="0.21720 0.16909 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.012.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.013">
+      <origin rpy="2.35619 0.00000 0.00000" xyz="0.27595 0.16909 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.013.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.014">
+      <origin rpy="-3.14159 -0.78540 -0.00000" xyz="0.33470 0.22784 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.014.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.015">
+      <origin rpy="1.57080 -0.00000 -3.14159" xyz="0.27595 0.29034 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.015.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.016">
+      <origin rpy="0.00000 -0.78540 -3.14159" xyz="0.33470 0.22784 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.016.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.017">
+      <origin rpy="1.57080 0.00000 0.78540" xyz="0.33470 0.16909 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.017.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.018">
+      <origin rpy="0.00000 -0.78540 -0.00000" xyz="0.34220 0.22784 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.018.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.019">
+      <origin rpy="1.57080 0.00000 -0.78540" xyz="0.34220 0.16909 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.019.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.020">
+      <origin rpy="3.14159 -0.78540 -3.14159" xyz="0.34220 0.22784 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.020.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.021">
+      <origin rpy="-0.78540 -1.57080 0.00000" xyz="0.34220 0.28659 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.021.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.022">
+      <origin rpy="-3.14159 -0.00000 1.57080" xyz="0.40095 0.22784 0.00196"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.022.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.023">
+      <origin rpy="2.35619 0.00000 0.00000" xyz="0.40095 0.16909 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.023.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.024">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="0.40095 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.024.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.025">
+      <origin rpy="0.78540 0.00000 0.00000" xyz="0.40095 0.16909 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.025.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.026">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.40095 0.22784 0.12696"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.026.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.027">
+      <origin rpy="-1.57080 1.57080 0.00000" xyz="0.40095 0.29034 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.027.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.028">
+      <origin rpy="2.35619 -0.00000 3.14159" xyz="0.40095 0.28659 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.028.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.029">
+      <origin rpy="0.78540 -0.00000 -3.14159" xyz="0.40095 0.28659 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.029.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.030">
+      <origin rpy="0.00000 -0.78540 -3.14159" xyz="0.45970 0.22784 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.030.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.031">
+      <origin rpy="1.57080 -0.00000 2.35619" xyz="0.45970 0.28659 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.031.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.032">
+      <origin rpy="-3.14159 -0.78540 -0.00000" xyz="0.45970 0.22784 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.032.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.033">
+      <origin rpy="1.57080 0.00000 0.78540" xyz="0.45970 0.16909 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.033.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.034">
+      <origin rpy="0.00000 -0.78540 -3.14159" xyz="0.33470 0.10284 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.034.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.035">
+      <origin rpy="1.57080 -0.00000 2.35619" xyz="0.33470 0.16159 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.035.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.036">
+      <origin rpy="-3.14159 -0.78540 -0.00000" xyz="0.33470 0.10284 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.036.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.037">
+      <origin rpy="1.57080 0.00000 0.78540" xyz="0.33470 0.04409 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.037.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.038">
+      <origin rpy="0.00000 -0.78540 -3.14159" xyz="0.33470 0.10284 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.038.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.039">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="0.27595 0.04034 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.039.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.040">
+      <origin rpy="0.78540 0.00000 0.00000" xyz="0.27595 0.04409 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.040.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.041">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.10284 0.12696"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.041.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.042">
+      <origin rpy="0.78540 -0.00000 -3.14159" xyz="0.27595 0.16159 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.042.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.043">
+      <origin rpy="2.35619 -0.00000 3.14159" xyz="0.27595 0.16159 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.043.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.044">
+      <origin rpy="-3.14159 -0.00000 1.57080" xyz="0.27595 0.10284 0.00196"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.044.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.045">
+      <origin rpy="2.35619 0.00000 0.00000" xyz="0.27595 0.04409 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.045.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.046">
+      <origin rpy="3.14159 -0.78540 -3.14159" xyz="0.21720 0.10284 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.046.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.047">
+      <origin rpy="1.57080 0.00000 -0.78540" xyz="0.21720 0.04409 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.047.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.048">
+      <origin rpy="0.00000 -0.78540 -0.00000" xyz="0.21720 0.10284 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.048.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.049">
+      <origin rpy="1.57080 -0.00000 -2.35619" xyz="0.21720 0.16159 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.049.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.050">
+      <origin rpy="-3.14159 -0.78540 -0.00000" xyz="0.20970 0.10284 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.050.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.051">
+      <origin rpy="1.57080 0.00000 0.78540" xyz="0.20970 0.04409 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.051.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.052">
+      <origin rpy="0.00000 -0.78540 -3.14159" xyz="0.20970 0.10284 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.052.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.053">
+      <origin rpy="1.57080 -0.00000 2.35619" xyz="0.20970 0.16159 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.053.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.054">
+      <origin rpy="-3.14159 -0.00000 1.57080" xyz="0.15095 0.10284 0.00196"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.054.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.055">
+      <origin rpy="2.35619 0.00000 0.00000" xyz="0.15095 0.04409 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.055.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.056">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="0.15095 0.04034 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.056.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.057">
+      <origin rpy="0.78540 0.00000 0.00000" xyz="0.15095 0.04409 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.057.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.058">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.15095 0.10284 0.12696"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.058.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.059">
+      <origin rpy="0.78540 -0.00000 -3.14159" xyz="0.15095 0.16159 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.059.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.060">
+      <origin rpy="1.57080 -0.00000 -3.14159" xyz="0.15095 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.060.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.061">
+      <origin rpy="2.35619 -0.00000 3.14159" xyz="0.15095 0.16159 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.061.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.062">
+      <origin rpy="-2.35619 0.00000 1.57080" xyz="0.09220 0.10284 0.00571"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.062.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.063">
+      <origin rpy="1.57080 0.00000 -0.78540" xyz="0.09220 0.04409 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.063.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.064">
+      <origin rpy="0.78540 0.00000 -1.57080" xyz="0.09220 0.10284 0.12321"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.064.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.065">
+      <origin rpy="-2.35619 1.57080 0.00000" xyz="0.09220 0.16159 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.065.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.066">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.066.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.067">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.067.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.068">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.068.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.069">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.069.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.070">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.070.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.071">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.071.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.072">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.072.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.073">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.073.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.074">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.074.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.075">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.075.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.076">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.076.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.077">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.077.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.078">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.078.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.079">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.079.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.080">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.080.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.081">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.081.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.082">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.082.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.083">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.083.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.084">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.084.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.085">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.085.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.086">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.086.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.087">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.087.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.088">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.088.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.089">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.089.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.090">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.090.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.091">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.091.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.092">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.092.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.093">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.093.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.094">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.094.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.095">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.095.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.096">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.096.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <collision name="obj_4-collision.097">
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/obj_4-collision.097.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00032" ixy="-0.00019" ixz="-0.00000" iyy="0.00052" iyz="-0.00000" izz="0.00071"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.27595 0.16534 0.06446"/>
+      <mass value="0.05000"/>
+    </inertial>
+    <visual name="obj_4">
+      <material name="turnarrow_yellow"/>
+      <origin rpy="-0.00000 0.00000 -1.57080" xyz="0.27595 0.16534 0.06446"/>
+      <geometry>
+        <mesh filename="../meshes/obj/bt_cube3x3_bricks.003.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="turnarrow_yellow">
+    <color rgba="0.87059 0.77255 0.05098 1.00000"/>
+  </material>
+</robot>

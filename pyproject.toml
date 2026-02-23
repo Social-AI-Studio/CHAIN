@@ -1,0 +1,118 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chainbench"
+version = "0.1.0"
+description = "CHAIN: Causal Hierarchy of Actions and Interactions – an interactive 3D physics-driven benchmark for evaluating VLMs on structured action reasoning"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Maojia Song", email = "maojia_song@mymail.sutd.edu.sg"},
+]
+keywords = ["vision-language", "reasoning", "benchmark", "VLM", "3D", "physics", "causal", "CHAIN"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "opencv-python>=4.12.0",
+    "Pillow>=11.0.0",
+    "matplotlib>=3.10.0",
+    "pandas>=2.3.0",
+    "transformers>=4.54.0",
+    "openai>=1.90.0,<1.100",
+    "python-dotenv>=1.0.1",
+    "gymnasium>=1.2.0",
+    "scipy>=1.15.0",
+    "google-generativeai>=0.8.0",
+    "anthropic>=0.57.0",
+    "nltk>=3.9.0",
+    "nvitop>=1.5.0",
+    "aisuite>=0.1.0",
+    "tiktoken>=0.11.0",
+    "pip-tools>=7.5.0",
+    "litellm==1.75.3",
+    "notebook>=7.0.0",
+    "tenacity>=9.0.0",
+    "openpyxl>=3.1.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "flake8>=5.0.0",
+    "mypy>=0.991",
+    "pre-commit>=2.20.0",
+]
+
+training = [
+    "accelerate>=1.8.0",
+    "deepspeed>=0.17.0",
+    "flash-attn>=2.8.3",
+    "flashinfer-python>=0.2.0",
+    "trl[vllm]==0.21.0",
+]
+
+[project.scripts]
+chainbench = "chainbench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+filterwarnings = [
+    "error",
+    "ignore::UserWarning",
+    "ignore::DeprecationWarning",
+]

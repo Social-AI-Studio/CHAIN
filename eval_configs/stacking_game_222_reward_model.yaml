@@ -1,0 +1,82 @@
+# Configuration for the Stacking Game Task with Step Selection (Reward Model)
+# This example uses VLM reward model to score and select the best action (1-5 scale)
+
+runner:
+  experiment_name: stacking_game_reward_model
+  log_dir: "logs"
+  results_excel_path: "experiment_results.xlsx"
+  history_length: 5
+
+agent:
+  type: "openai"
+  model_name: "qwen/qwen3-vl-30b-a3b-thinking"
+  # API key and base URL are loaded from environment variables (.env file or system export)
+  api_key: null
+  base_url: null
+  temperature: 0.1
+  max_tokens: 128000
+  timeout: 300.0
+
+judgement:
+  type: "openai"
+  model_name: "bytedance-seed/seed-1.6-flash"
+  api_key: null
+  base_url: null
+  temperature: 0.1
+  max_tokens: 4000
+  timeout: 300.0
+
+environment:
+  type: "stacking_game"
+  gui: false
+  render_width: 512
+  render_height: 512
+  multi_view: true
+  load_table: false
+  max_steps: 6
+  puzzle_dir: "assets/stacking_game/puzzles_full_v9"
+  default_size: "2x2x2"
+  default_puzzle_id: "puzzle_001"
+  randomize_on_reset: true
+  init_spacing: 2
+  init_seed: null
+  render_unplaced: true
+
+task:
+  type: "stacking_game"
+  name: "stacking_game_reward_model"
+  difficulty: easy
+  puzzle_size: "2x2x2"
+  puzzle_id: "puzzle_001"
+  ruled_evaluation: true
+  allow_random_puzzle: false
+  init_seed: null
+
+# Step Selection Configuration (Reward Model)
+step_selection:
+  enabled: true
+  
+  # Selection method: "reward_model" uses VLM to score each action (1-5 scale)
+  selection_method: "reward_model"
+  
+  # Number of candidate actions to generate per step (for each beam)
+  num_candidates: 3
+  
+  # Beam width: number of parallel paths to maintain (top-k best beams)
+  # - top_k = 1: Greedy search (single best path)
+  # - top_k > 1: Beam search (multiple parallel paths)
+  top_k: 2
+  
+  # Reward model configuration
+  reward_model_type: "transformers"  # "openai" or "transformers"
+  reward_model_name: "ob11/Qwen-VL-PRM-3B"
+  reward_model_mode: "discriminative"  # "generative" (1-5 scale) or "discriminative" (+/- binary)
+  reward_api_key: null  # Uses OPENAI_API_KEY from environment
+  reward_base_url: null  # Uses OPENAI_BASE_URL from environment
+  reward_temperature: 0.1
+  reward_max_tokens: 300
+  reward_device: "auto"
+  reward_torch_dtype: "auto"
+  
+  # Agent generation settings for multiple candidates
+  candidate_temperature: 0.8  # Higher temperature for diversity in candidate generation

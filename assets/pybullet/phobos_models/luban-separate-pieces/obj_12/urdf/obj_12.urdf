@@ -1,0 +1,49 @@
+<robot name="obj_12" version="1.0">
+  <link name="obj_12_link">
+    <collision name="obj_12_collision_1">
+      <origin rpy="3.14159 1.57080 3.14159" xyz="-2.13455 0.74744 2.26159"/>
+      <geometry>
+        <mesh filename="../meshes/obj/Cube.035.obj" scale="1.00000 0.98000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_12_collision_2">
+      <origin rpy="3.14159 1.57080 3.14159" xyz="-2.13455 3.76260 2.26159"/>
+      <geometry>
+        <mesh filename="../meshes/obj/Cube.036.obj" scale="1.00000 0.98000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_12_collision_3">
+      <origin rpy="3.14159 1.57080 3.14159" xyz="-2.32215 2.82557 2.26327"/>
+      <geometry>
+        <mesh filename="../meshes/obj/Cube.037.obj" scale="2.00000 3.04000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_12_collision_4">
+      <origin rpy="3.14159 1.57080 3.14159" xyz="-2.32215 1.68440 2.07512"/>
+      <geometry>
+        <mesh filename="../meshes/obj/Cube.038.obj" scale="1.00000 3.04000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="obj_12_collision_5">
+      <origin rpy="3.14159 1.57080 3.14159" xyz="-2.32215 1.30531 2.44941"/>
+      <geometry>
+        <mesh filename="../meshes/obj/Cube.039.obj" scale="1.00000 1.01333 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="7.06445" ixy="-0.03978" ixz="0.01628" iyy="0.43812" iyz="0.00994" izz="7.08497"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-2.20877 2.28481 2.24700"/>
+      <mass value="5.00000"/>
+    </inertial>
+    <visual name="obj_12">
+      <material name="turnaxis"/>
+      <origin rpy="3.14159 1.57080 3.14159" xyz="-2.20877 2.28481 2.24700"/>
+      <geometry>
+        <mesh filename="../meshes/obj/luban-lock-sliding.011.obj" scale="0.05000 0.05000 0.05000"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="turnaxis">
+    <color rgba="0.63922 0.70196 1.00000 1.00000"/>
+  </material>
+</robot>

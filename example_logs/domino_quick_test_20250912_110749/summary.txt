@@ -1,0 +1,17 @@
+Experiment Summary: domino_quick_test_20250912_110749
+============================================================
+Total Steps: 4
+Actions Taken: 4
+Errors Occurred: 0
+Images Saved: 5
+
+Step-by-step breakdown:
+------------------------------
+Step 1: Action 'push_specific_domino'
+  Result: {'status': 'success', 'message': "Pushed domino 'domino_1' with force 5", 'settle_steps': 318}
+Step 2: Action 'reset_dominoes'
+  Result: {'status': 'error', 'message': "Failed to execute tool 'reset_dominoes': 'DominoEnvironment' object has no attribute '_arrange_dominoes'", 'settle_steps': 1}
+Step 2: Action 'push_specific_domino'
+  Result: {'status': 'success', 'message': "Pushed domino 'domino_1' with force 7", 'settle_steps': 101}
+Step 3: Action 'push_specific_domino'
+  Result: {'status': 'success', 'message': "Pushed domino 'domino_2' with force 5", 'settle_steps': 234}

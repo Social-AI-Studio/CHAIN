@@ -1,0 +1,37 @@
+<robot name="obj_4" version="1.0">
+  <link name="obj_4">
+    <collision name="interlocking-puzzle-2-2-collision.001">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.41016 0.22847 0.40324"/>
+      <geometry>
+        <mesh filename="../meshes/obj/interlocking-puzzle-2-2-collision.001.obj" scale="2.09740 2.08327 2.09740"/>
+      </geometry>
+    </collision>
+    <collision name="interlocking-puzzle-2-2-collision.002">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.41731 0.76163 0.39711"/>
+      <geometry>
+        <mesh filename="../meshes/obj/interlocking-puzzle-2-2-collision.002.obj" scale="2.09740 2.07822 2.09740"/>
+      </geometry>
+    </collision>
+    <collision name="interlocking-puzzle-2-2-collision.003">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.41073 0.51989 0.44109"/>
+      <geometry>
+        <mesh filename="../meshes/obj/interlocking-puzzle-2-2-collision.003.obj" scale="2.09740 2.09740 2.09740"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00526" ixy="0.00000" ixz="0.00000" iyy="0.00055" iyz="-0.00000" izz="0.00518"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.41731 0.49367 0.42087"/>
+      <mass value="0.03000"/>
+    </inertial>
+    <visual name="interlocking-puzzle-2-2">
+      <material name="Light Blue"/>
+      <origin rpy="-1.57080 0.00000 -1.57080" xyz="-0.41731 0.49367 0.37750"/>
+      <geometry>
+        <mesh filename="../meshes/obj/interlocking-puzzle-2.001.obj" scale="0.01049 0.01049 0.01049"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="Light Blue">
+    <color rgba="0.15294 0.68627 0.80000 1.00000"/>
+  </material>
+</robot>

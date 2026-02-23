@@ -1,0 +1,61 @@
+# Configuration for the Luban Lock Disassembly Task
+# This example demonstrates the Luban Lock disassembly task.
+
+runner:
+  experiment_name: luban_disassembly_test
+  log_dir: "logs"
+  results_excel_path: "experiment_results.xlsx"
+  history_length: 5
+
+agent:
+  type: "openai"
+  # model_name: "qwen/qwen3-vl-30b-a3b-thinking"
+  # max_content_size: 100000
+  # model_name: "google/gemini-3-pro-preview"
+  # max_content_size: 1000000
+  # model_name: "bytedance-seed/seed-1.6-flash"
+  # max_content_size: 204800
+  # model_name: "bytedance-seed/seed-1.6"
+  # max_content_size: 204800
+  model_name: "gpt-5.2"
+  # max_tokens: 200000
+  # model_name: "xiaomi/mimo-v2-flash:free"
+  # max_content_size: 204800
+  # API key and base URL are automatically loaded from .env file or environment variables
+  # If not set here, they will be read from OPENAI_API_KEY and OPENAI_BASE_URL
+  # api_key: null  # Optional: set to null or omit to use .env file
+  # base_url: null  # Optional: set to null or omit to use .env file
+  temperature: 0.6
+  max_tokens: 4096
+  timeout: 300.0
+
+judgement:
+  type: "openai"
+  model_name: "qwen/qwen3-vl-30b-a3b-thinking"
+  # API key and base URL are automatically loaded from .env file or environment variables
+  # If not set here, they will be read from OPENAI_API_KEY and OPENAI_BASE_URL
+  # api_key: null  # Optional: set to null or omit to use .env file
+  # base_url: null  # Optional: set to null or omit to use .env file
+  temperature: 0.1
+  max_tokens: 2048
+  timeout: 300.0
+
+environment:
+  type: "luban"
+  urdf_local_path: "assets/pybullet/phobos_models"
+  gui: false
+  render_width: 512
+  render_height: 512
+  move_unit_step: 0.01
+  rotate_unit_step: 5.0
+  enable_soft_collision: true
+  soft_collision_damping: 0.99
+  max_steps: 6
+
+task:
+  type: "luban_disassembly"
+  name: "luban_test"
+  difficulty: "easy"
+  urdf_root: "assets/pybullet/phobos_models/luban-6-piece"
+  target_displacement_threshold: 0.08
+  ruled_evaluation: true

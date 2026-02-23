@@ -1,0 +1,37 @@
+<robot name="obj_1" version="1.0">
+  <link name="link_1">
+    <collision name="1-collision.001">
+      <origin rpy="0.00000 0.00000 -0.78557" xyz="-0.37777 0.26478 0.06476"/>
+      <geometry>
+        <mesh filename="../meshes/obj/1-collision.001.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="1-collision.002">
+      <origin rpy="0.00000 0.00000 -0.78557" xyz="-0.35853 0.26472 0.38645"/>
+      <geometry>
+        <mesh filename="../meshes/obj/1-collision.002.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="1-collision.003">
+      <origin rpy="0.00000 0.00000 -0.78557" xyz="-0.36059 0.25717 0.23357"/>
+      <geometry>
+        <mesh filename="../meshes/obj/1-collision.003.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00019" ixy="-0.00001" ixz="0.00000" iyy="0.00019" iyz="0.00000" izz="0.00005"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.36816 0.25483 0.22565"/>
+      <mass value="0.01000"/>
+    </inertial>
+    <visual name="1">
+      <material name="turnarrow_orange"/>
+      <origin rpy="-0.78557 -1.57080 0.00000" xyz="-0.37004 0.29969 0.23752"/>
+      <geometry>
+        <mesh filename="../meshes/obj/6 part puzzle cube.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="turnarrow_orange">
+    <color rgba="0.78824 0.34510 0.00000 1.00000"/>
+  </material>
+</robot>

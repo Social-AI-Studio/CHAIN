@@ -1,0 +1,85 @@
+<robot name="obj_2" version="1.0">
+  <link name="link_piece_2">
+    <collision name="piece_2-collision.001">
+      <origin rpy="0.00000 0.00000 -1.57080" xyz="-0.30171 0.16084 0.21612"/>
+      <geometry>
+        <mesh filename="../meshes/obj/piece_2-collision.001.obj" scale="2.12910 2.12910 2.12910"/>
+      </geometry>
+    </collision>
+    <collision name="piece_2-collision.002">
+      <origin rpy="0.00000 0.00000 -1.57080" xyz="-0.06073 0.37169 0.26231"/>
+      <geometry>
+        <mesh filename="../meshes/obj/piece_2-collision.002.obj" scale="2.12910 2.12910 2.09201"/>
+      </geometry>
+    </collision>
+    <collision name="piece_2-collision.003">
+      <origin rpy="0.00000 0.00000 -1.57080" xyz="-0.43362 0.49046 0.28574"/>
+      <geometry>
+        <mesh filename="../meshes/obj/piece_2-collision.003.obj" scale="2.12910 2.12910 2.12910"/>
+      </geometry>
+    </collision>
+    <collision name="piece_2-collision.004">
+      <origin rpy="0.00000 0.00000 -1.57080" xyz="-0.12286 0.19362 0.26076"/>
+      <geometry>
+        <mesh filename="../meshes/obj/piece_2-collision.004.obj" scale="2.12910 2.12910 2.12910"/>
+      </geometry>
+    </collision>
+    <collision name="piece_2-collision.005">
+      <origin rpy="0.00000 0.00000 -1.57080" xyz="-0.27712 0.60246 0.26004"/>
+      <geometry>
+        <mesh filename="../meshes/obj/piece_2-collision.005.obj" scale="2.12910 2.12910 2.12910"/>
+      </geometry>
+    </collision>
+    <collision name="piece_2-collision.006">
+      <origin rpy="0.00000 0.00000 -1.57080" xyz="-0.25608 0.49218 0.30073"/>
+      <geometry>
+        <mesh filename="../meshes/obj/piece_2-collision.006.obj" scale="2.12910 2.11495 2.12910"/>
+      </geometry>
+    </collision>
+    <collision name="piece_2-collision.007">
+      <origin rpy="0.00000 0.00000 -1.57080" xyz="-0.38438 0.19753 0.28037"/>
+      <geometry>
+        <mesh filename="../meshes/obj/piece_2-collision.007.obj" scale="2.12910 2.12910 2.12910"/>
+      </geometry>
+    </collision>
+    <collision name="piece_2-collision.008">
+      <origin rpy="0.00000 0.00000 -1.57080" xyz="-0.11446 0.49520 0.23734"/>
+      <geometry>
+        <mesh filename="../meshes/obj/piece_2-collision.008.obj" scale="2.12140 2.12910 2.12910"/>
+      </geometry>
+    </collision>
+    <collision name="piece_2-collision.009">
+      <origin rpy="0.00000 0.00000 -1.57080" xyz="-0.49680 0.23962 0.25628"/>
+      <geometry>
+        <mesh filename="../meshes/obj/piece_2-collision.009.obj" scale="2.12910 2.12910 2.12910"/>
+      </geometry>
+    </collision>
+    <collision name="piece_2-collision.010">
+      <origin rpy="0.00000 0.00000 -1.57080" xyz="-0.29540 0.49046 0.22010"/>
+      <geometry>
+        <mesh filename="../meshes/obj/piece_2-collision.010.obj" scale="2.12910 2.12910 2.12910"/>
+      </geometry>
+    </collision>
+    <collision name="piece_2-collision.011">
+      <origin rpy="0.00000 0.00000 -1.57080" xyz="-0.38226 0.34865 0.21747"/>
+      <geometry>
+        <mesh filename="../meshes/obj/piece_2-collision.011.obj" scale="2.12910 2.12910 2.12910"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00109" ixy="0.00001" ixz="0.00001" iyy="0.00110" iyz="-0.00000" izz="0.00201"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.28073 0.39219 0.25723"/>
+      <mass value="0.01000"/>
+    </inertial>
+    <visual name="piece_2">
+      <material name="Piece"/>
+      <origin rpy="0.00000 0.00000 -1.57080" xyz="-0.28268 0.33640 0.25647"/>
+      <geometry>
+        <mesh filename="../meshes/obj/threePlates_14m.001.obj" scale="0.01065 0.01065 0.01065"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="Piece">
+    <color rgba="0.15294 0.80000 0.78039 1.00000"/>
+  </material>
+</robot>

@@ -1,0 +1,70 @@
+Experiment Summary: level_16_2x3x3_mid_002_run_1_20260127_103215
+============================================================
+Total Steps: 30
+Actions Taken: 30
+Errors Occurred: 0
+Images Saved: 31
+
+Step-by-step breakdown:
+------------------------------
+Step 0: Initial setup
+Step 1: Action 'state'
+  Result: {'status': 'success', 'message': 'State retrieved', 'state': {'box': [2, 3, 3], 'occupied': 0, 'total_cells': 18, 'placed_pieces': [], 'unplaced_pieces': ['0', '1', '2', '3'], 'is_complete': False}}
+Step 2: Action 'place'
+  Result: {'status': 'success', 'message': 'Piece placed successfully', 'transform': {'rotation': 2, 'position': (1, 1, 1)}}
+Step 3: Action 'place'
+  Result: {'status': 'error', 'message': 'Shape does not match any rotation of the piece', 'error': 'ShapeMismatch'}
+Step 4: Action 'state'
+  Result: {'status': 'success', 'message': 'State retrieved', 'state': {'box': [2, 3, 3], 'occupied': 3, 'total_cells': 18, 'placed_pieces': ['3'], 'unplaced_pieces': ['0', '1', '2'], 'is_complete': False}}
+Step 5: Action 'place'
+  Result: {'status': 'success', 'message': 'Piece placed successfully', 'transform': {'rotation': 12, 'position': (1, 1, 3)}}
+Step 6: Action 'place'
+  Result: {'status': 'error', 'message': 'Shape does not match any rotation of the piece', 'error': 'ShapeMismatch'}
+Step 7: Action 'place'
+  Result: {'status': 'success', 'message': 'Piece placed successfully', 'transform': {'rotation': 9, 'position': (1, 3, 1)}}
+Step 8: Action 'state'
+  Result: {'status': 'success', 'message': 'State retrieved', 'state': {'box': [2, 3, 3], 'occupied': 13, 'total_cells': 18, 'placed_pieces': ['1', '2', '3'], 'unplaced_pieces': ['0'], 'is_complete': False}}
+Step 9: Action 'place'
+  Result: {'status': 'error', 'message': 'Shape does not match any rotation of the piece', 'error': 'ShapeMismatch'}
+Step 10: Action 'pickup'
+  Result: {'status': 'success', 'message': 'Piece 2 picked up'}
+Step 11: Action 'place'
+  Result: {'status': 'success', 'message': 'Piece placed successfully', 'transform': {'rotation': 13, 'position': (1, 1, 2)}}
+Step 12: Action 'pickup'
+  Result: {'status': 'success', 'message': 'Piece 2 picked up'}
+Step 13: Action 'place'
+  Result: {'status': 'success', 'message': 'Piece placed successfully', 'transform': {'rotation': 8, 'position': (2, 2, 1)}}
+Step 14: Action 'pickup'
+  Result: {'status': 'success', 'message': 'Piece 2 picked up'}
+Step 15: Action 'pickup'
+  Result: {'status': 'success', 'message': 'Piece 1 picked up'}
+Step 16: Action 'place'
+  Result: {'status': 'error', 'message': 'Shape does not match any rotation of the piece', 'error': 'ShapeMismatch'}
+Step 17: Action 'place'
+  Result: {'status': 'error', 'message': 'Shape does not match any rotation of the piece', 'error': 'ShapeMismatch'}
+Step 18: Action 'place'
+  Result: {'status': 'error', 'message': 'Shape does not match any rotation of the piece', 'error': 'ShapeMismatch'}
+Step 19: Action 'place'
+  Result: {'status': 'error', 'message': 'Shape does not match any rotation of the piece', 'error': 'ShapeMismatch'}
+Step 20: Action 'place'
+  Result: {'status': 'error', 'message': 'Shape does not match any rotation of the piece', 'error': 'ShapeMismatch'}
+Step 21: Action 'place'
+  Result: {'status': 'error', 'message': 'Shape does not match any rotation of the piece', 'error': 'ShapeMismatch'}
+Step 22: Action 'place'
+  Result: {'status': 'error', 'message': 'Shape does not match any rotation of the piece', 'error': 'ShapeMismatch'}
+Step 23: Action 'place'
+  Result: {'status': 'error', 'message': 'Shape does not match any rotation of the piece', 'error': 'ShapeMismatch'}
+Step 24: Action 'place'
+  Result: {'status': 'error', 'message': 'Shape does not match any rotation of the piece', 'error': 'ShapeMismatch'}
+Step 25: Action 'place'
+  Result: {'status': 'success', 'message': 'Piece placed successfully', 'transform': {'rotation': 12, 'position': (1, 1, 3)}}
+Step 26: Action 'place'
+  Result: {'status': 'success', 'message': 'Piece placed successfully', 'transform': {'rotation': 9, 'position': (1, 3, 1)}}
+Step 27: Action 'pickup'
+  Result: {'status': 'success', 'message': 'Piece 2 picked up'}
+Step 28: Action 'place'
+  Result: {'status': 'success', 'message': 'Piece placed successfully', 'transform': {'rotation': 8, 'position': (2, 2, 1)}}
+Step 29: Action 'pickup'
+  Result: {'status': 'success', 'message': 'Piece 2 picked up'}
+Step 30: Action 'place'
+  Result: {'status': 'error', 'message': 'Shape does not match any rotation of the piece', 'error': 'ShapeMismatch'}

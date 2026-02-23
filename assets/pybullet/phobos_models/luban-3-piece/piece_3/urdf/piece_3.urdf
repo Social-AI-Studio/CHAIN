@@ -1,0 +1,37 @@
+<robot name="piece_3" version="1.0">
+  <link name="piece_3">
+    <collision name="geometry_0.002">
+      <origin rpy="-1.57080 0.00000 1.57080" xyz="-0.57010 0.17876 0.50339"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_0.002.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="geometry_1.002">
+      <origin rpy="-1.57080 0.00000 1.57080" xyz="-0.52769 0.58673 0.54578"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_1.002.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="geometry_2.002">
+      <origin rpy="-1.57080 0.00000 1.57080" xyz="-0.56786 0.97379 0.50563"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_2.002.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00455" ixy="0.00000" ixz="0.00000" iyy="0.00031" iyz="-0.00000" izz="0.00455"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.57233 0.58267 0.50114"/>
+      <mass value="0.05000"/>
+    </inertial>
+    <visual name="lubanlock2.002">
+      <material name="turnarrow_bluish_green"/>
+      <origin rpy="-1.57080 0.00000 1.57080" xyz="-0.56789 0.58286 0.50558"/>
+      <geometry>
+        <mesh filename="../meshes/obj/lubanlock2.002.obj" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="turnarrow_bluish_green">
+    <color rgba="0.00000 0.34118 0.16863 1.00000"/>
+  </material>
+</robot>

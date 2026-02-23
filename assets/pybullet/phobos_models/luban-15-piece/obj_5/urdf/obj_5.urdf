@@ -1,0 +1,37 @@
+<robot name="obj_5" version="1.0">
+  <link name="obj_5">
+    <collision name="medium-piece-1-collision.001">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/medium-piece-1-collision.001.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="medium-piece-1-collision.002">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/medium-piece-1-collision.002.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <collision name="medium-piece-1-collision.003">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/obj/medium-piece-1-collision.003.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00002" ixy="-0.00000" ixz="0.00000" iyy="0.00002" iyz="0.00000" izz="0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.25576 0.18655 0.17991"/>
+      <mass value="0.00400"/>
+    </inertial>
+    <visual name="medium-piece-1">
+      <material name="turnarrow"/>
+      <origin rpy="-1.57080 1.57080 0.00000" xyz="-0.25576 0.19431 0.17991"/>
+      <geometry>
+        <mesh filename="../meshes/obj/medium-piece.001.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="turnarrow">
+    <color rgba="0.23137 0.44706 0.80000 1.00000"/>
+  </material>
+</robot>

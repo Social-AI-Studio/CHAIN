@@ -1,0 +1,85 @@
+<robot name="nail_2" version="1.0">
+  <link name="nail_2_link">
+    <collision name="geometry_0.001">
+      <origin rpy="3.14159 -0.00000 0.00000" xyz="-0.35667 0.22228 0.07607"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_0.002.obj" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </collision>
+    <collision name="geometry_1.001">
+      <origin rpy="3.14159 -0.00000 0.00000" xyz="-0.35667 0.22228 0.07607"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_1.002.obj" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </collision>
+    <collision name="geometry_10.001">
+      <origin rpy="3.14159 -0.00000 0.00000" xyz="-0.35667 0.22228 0.07607"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_10.002.obj" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </collision>
+    <collision name="geometry_2.001">
+      <origin rpy="3.14159 -0.00000 0.00000" xyz="-0.35667 0.22228 0.07607"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_2.002.obj" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </collision>
+    <collision name="geometry_3.001">
+      <origin rpy="3.14159 -0.00000 0.00000" xyz="-0.35667 0.22228 0.07607"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_3.002.obj" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </collision>
+    <collision name="geometry_4.001">
+      <origin rpy="3.14159 -0.00000 0.00000" xyz="-0.35667 0.22228 0.07607"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_4.002.obj" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </collision>
+    <collision name="geometry_5.001">
+      <origin rpy="3.14159 -0.00000 0.00000" xyz="-0.35667 0.22228 0.07607"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_5.002.obj" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </collision>
+    <collision name="geometry_6.001">
+      <origin rpy="3.14159 -0.00000 0.00000" xyz="-0.35667 0.22228 0.07607"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_6.002.obj" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </collision>
+    <collision name="geometry_7.001">
+      <origin rpy="3.14159 -0.00000 0.00000" xyz="-0.35667 0.22228 0.07607"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_7.002.obj" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </collision>
+    <collision name="geometry_8.001">
+      <origin rpy="3.14159 -0.00000 0.00000" xyz="-0.35667 0.22228 0.07607"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_8.002.obj" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </collision>
+    <collision name="geometry_9.001">
+      <origin rpy="3.14159 -0.00000 0.00000" xyz="-0.35667 0.22228 0.07607"/>
+      <geometry>
+        <mesh filename="../meshes/obj/geometry_9.002.obj" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00037" ixy="0.00001" ixz="-0.00016" iyy="0.00070" iyz="0.00002" izz="0.00037"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.31492 0.23664 0.12053"/>
+      <mass value="0.10000"/>
+    </inertial>
+    <visual name="Nail_Puzzle-Nail.001">
+      <material name="turnarrow"/>
+      <origin rpy="3.14159 -0.00000 0.00000" xyz="-0.35667 0.22228 0.07607"/>
+      <geometry>
+        <mesh filename="../meshes/obj/Nail_Puzzle-Nail.006.obj" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="turnarrow">
+    <color rgba="0.23137 0.44706 0.80000 1.00000"/>
+  </material>
+</robot>

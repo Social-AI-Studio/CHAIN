@@ -1,0 +1,25 @@
+<robot name="obj_6" version="1.0">
+  <link name="link_6">
+    <collision name="6-collision.001">
+      <origin rpy="0.00000 0.00000 -0.78557" xyz="-0.37582 0.37331 0.33337"/>
+      <geometry>
+        <mesh filename="../meshes/obj/6-collision.001.obj" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00011" ixy="0.00007" ixz="-0.00000" iyy="0.00011" iyz="0.00000" izz="0.00019"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.37582 0.37331 0.33337"/>
+      <mass value="0.01000"/>
+    </inertial>
+    <visual name="6">
+      <material name="turnarrow_vermillion"/>
+      <origin rpy="0.78540 -0.00000 -0.00017" xyz="-0.37582 0.37331 0.33337"/>
+      <geometry>
+        <mesh filename="../meshes/obj/6 part puzzle cube.005.obj" scale="0.00500 0.00500 0.00500"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="turnarrow_vermillion">
+    <color rgba="0.66275 0.10980 0.00000 1.00000"/>
+  </material>
+</robot>

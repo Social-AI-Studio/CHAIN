@@ -1,0 +1,55 @@
+<robot name="obj_5" version="1.0">
+  <link name="obj_5">
+    <collision name="interlocking-puzzle-3-1-collision.001">
+      <origin rpy="-1.57080 -1.57080 0.00000" xyz="-0.33768 0.49433 0.04298"/>
+      <geometry>
+        <mesh filename="../meshes/obj/Cube.002.obj" scale="1.98739 2.09740 2.09740"/>
+      </geometry>
+    </collision>
+    <collision name="interlocking-puzzle-3-1-collision.002">
+      <origin rpy="-1.57080 1.57080 0.00000" xyz="-0.29777 0.49433 0.15934"/>
+      <geometry>
+        <mesh filename="../meshes/obj/Cube.003.obj" scale="2.13924 2.09740 2.09740"/>
+      </geometry>
+    </collision>
+    <collision name="interlocking-puzzle-3-1-collision.003">
+      <origin rpy="-1.57080 0.00000 1.57080" xyz="-0.29777 0.53424 0.31742"/>
+      <geometry>
+        <mesh filename="../meshes/obj/Cube.004.obj" scale="2.09740 2.09076 2.09740"/>
+      </geometry>
+    </collision>
+    <collision name="interlocking-puzzle-3-1-collision.004">
+      <origin rpy="-1.57080 -0.00000 -1.57080" xyz="-0.37642 0.53424 0.31885"/>
+      <geometry>
+        <mesh filename="../meshes/obj/Cube.006.obj" scale="2.09740 2.09740 2.09740"/>
+      </geometry>
+    </collision>
+    <collision name="interlocking-puzzle-3-1-collision.005">
+      <origin rpy="1.57080 0.00000 -1.57080" xyz="-0.29777 0.49433 0.51489"/>
+      <geometry>
+        <mesh filename="../meshes/obj/Cube.007.obj" scale="2.09740 2.09740 2.09740"/>
+      </geometry>
+    </collision>
+    <collision name="interlocking-puzzle-3-1-collision.006">
+      <origin rpy="-1.57080 -1.57080 0.00000" xyz="-0.37642 0.49433 0.59473"/>
+      <geometry>
+        <mesh filename="../meshes/obj/Cube.008.obj" scale="2.09740 2.08293 2.09740"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00515" ixy="0.00000" ixz="-0.00000" iyy="0.00517" iyz="0.00000" izz="0.00049"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.32152 0.50217 0.31885"/>
+      <mass value="0.03000"/>
+    </inertial>
+    <visual name="interlocking-puzzle-3-1">
+      <material name="Light Blue"/>
+      <origin rpy="1.57080 -1.57080 0.00000" xyz="-0.34777 0.49456 0.31885"/>
+      <geometry>
+        <mesh filename="../meshes/obj/interlocking-puzzle-3.obj" scale="0.01049 0.01049 0.01049"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="Light Blue">
+    <color rgba="0.15294 0.68627 0.80000 1.00000"/>
+  </material>
+</robot>

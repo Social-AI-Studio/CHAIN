@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAIN: From Perception to Action</title>
+    <meta name="description" content="CHAIN: An interactive 3D benchmark for evaluating vision-language models on physical reasoning through interlocking puzzles and 3D stacking tasks.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container hero-inner">
+            <div class="hero-layout">
+                <div class="hero-left">
+                    <img src="logo/CHAIN -2.jpeg" alt="CHAIN" class="header-logo">
+                    <h1><span class="chain-name">CHAIN</span>: From Perception to Action</h1>
+                    <p class="authors">
+                        Yihuai Lan<sup>*</sup>, Maojia Song<sup>*</sup>, Yuhao Wu<sup>*</sup><sup>#</sup>,  Lei Wang<sup>†</sup>, Zhiqiang Hu,
+                        Yao Xiao, Heng Zhou, Weihua Zheng, Dylan Raharja, Soujanya Poria<sup>†</sup>,
+                        Roy Ka-Wei Lee<sup>†</sup>
+                      </p>
+                      <p class="author-notes">
+                        <sup>*</sup> Equal contribution. <sup>#</sup> Project Leader. <sup>†</sup> Advisor.
+                      </p>
+                    <p class="tagline">
+                        An interactive 3D, physics-driven benchmark for evaluating whether vision-language
+                        and diffusion models can reason about physical structure and execute action sequences
+                        grounded in causal constraints.
+                    </p>
+                    <div class="badges">
+                        <a href="#" class="badge badge-paper">&#128196; Paper</a>
+                        <a href="https://github.com/MAOJIASONG/VisualReasonBench" class="badge badge-code">&#128187; Code</a>
+                        <a href="#" class="badge badge-data">&#128230; Dataset</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <figure class="paper-figure">
+                        <img src="assets/teaser.png"
+                             alt="CHAIN benchmark overview: (a) Traditional VQA relies on passive observation. (b) CHAIN requires multi-step interaction, enabling procedural evaluation of planning and structural understanding."
+                             onerror="this.closest('.paper-figure').classList.add('figure-missing')">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Abstract -->
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <p>
+                Understanding the physical structure is essential for real-world applications such as
+                embodied agents, interactive design, and long-horizon manipulation. Yet, prevailing
+                Vision&ndash;Language Model (VLM) evaluations still center on structure-agnostic,
+                single-turn setups (e.g., VQA), which fail to assess agents' ability to reason about
+                how geometry, contact, and support relations jointly constrain what actions are possible
+                in a dynamic environment. To address this gap, we introduce the
+                <strong>C</strong>ausal <strong>H</strong>ierarchy of <strong>A</strong>ctions and
+                <strong>In</strong>teractions (<strong>CHAIN</strong>) benchmark, an interactive 3D,
+                physics-driven testbed designed to evaluate whether models can understand, plan, and
+                execute structured action sequences grounded in physical constraints.
+                <strong>CHAIN</strong> shifts evaluation from passive perception to active problem solving,
+                spanning tasks such as interlocking mechanical puzzles and 3D stacking and packing.
+                We conduct a comprehensive study of state-of-the-art VLMs and diffusion-based models
+                under unified interactive settings. Our results show that top-performing models still
+                struggle to internalize physical structure and causal constraints, often failing to
+                produce reliable long-horizon plans and cannot robustly translate perceived structure
+                into effective actions.
+            </p>
+        </section>
+
+        <!-- Showcase -->
+        <section id="showcase" aria-label="Showcase Grid">
+            <h2>Showcase</h2>
+
+            <div class="showcase-row" aria-label="VLM Agents">
+                <h3 class="showcase-row-head">VLM Agents</h3>
+                <div id="showcase-vlm-grid" class="showcase-grid"></div>
+            </div>
+
+            <div class="showcase-row" aria-label="Diffusion Models">
+                <h3 class="showcase-row-head">Diffusion Models</h3>
+                <p class="takeaway-callout">
+                    Models generate visually plausible motion but consistently fail to respect geometric
+                    constraints &mdash; pieces phase through each other, ignore collision boundaries, and
+                    produce physically impossible assembly sequences.
+                </p>
+                <div class="showcase-grid-stack" aria-label="Diffusion Models Grid">
+                    <div id="showcase-diffusion-grid-top" class="showcase-grid showcase-grid-tight"></div>
+                    <div id="showcase-diffusion-grid-bottom" class="showcase-grid showcase-grid-tight"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Results -->
+        <section id="key-results" aria-label="Key Results">
+            <h2>How Do Frontier Models Perform?</h2>
+            <p class="section-desc">
+                Overall accuracy remains low, with the largest gap appearing on interlocking puzzles.
+                The chart below highlights the top models by overall Pass@1.
+            </p>
+            <div class="results-panel">
+                <div class="results-stats" aria-label="Headline Statistics">
+                    <div class="results-stat">
+                        <div class="results-stat-number kr-blue">22.9%</div>
+                        <div class="results-stat-label">Best model overall accuracy (GPT-5.2)</div>
+                    </div>
+                    <div class="results-stat">
+                        <div class="results-stat-number kr-red">0&ndash;3.1%</div>
+                        <div class="results-stat-label">Puzzle accuracy across all models</div>
+                    </div>
+                    <div class="results-stat">
+                        <div class="results-stat-number kr-green">109</div>
+                        <div class="results-stat-label">Interactive 3D levels across 2 task families</div>
+                    </div>
+                </div>
+                <div id="results-chart" class="results-chart" aria-label="Overall Accuracy Bar Chart"></div>
+            </div>
+        </section>
+
+        <!-- Task Overview -->
+        <section id="task-overview" class="section-alt">
+            <h2>Task Overview</h2>
+            <p class="section-desc">
+                <strong>CHAIN</strong> comprises <strong>109</strong> distinct interactive levels across
+                two task families, each stressing complementary aspects of structured physical reasoning.
+            </p>
+            <div class="task-cards">
+                <div class="task-card">
+                    <h3>Puzzle <span class="task-card-sub">Interlocking Mechanical Structures</span></h3>
+                    <figure class="paper-figure task-figure">
+                        <img src="assets/figure 5.png"
+                             alt="Puzzle task examples across Easy, Medium, and Hard difficulty levels, showing Kongming locks, Lu Ban locks, and burr puzzles."
+                             onerror="this.closest('.paper-figure').classList.add('figure-missing')">
+                    </figure>
+                    <p>
+                        Assemble or disassemble multi-piece structures (Kongming locks, Lu Ban locks,
+                        burr puzzles) through fine-grained mortise-and-tenon manipulation. Progress depends
+                        on executing steps in the correct order under hidden geometric constraints,
+                        contact-rich dependencies, and collision avoidance.
+                    </p>
+                    <ul class="task-stats">
+                        <li><strong>32</strong> instances</li>
+                        <li><span class="diff-dot diff-easy"></span> 10 Easy</li>
+                        <li><span class="diff-dot diff-medium"></span> 12 Medium</li>
+                        <li><span class="diff-dot diff-hard"></span> 10 Hard</li>
+                    </ul>
+                </div>
+                <div class="task-card">
+                    <h3>Stacking <span class="task-card-sub">3D Spatial Packing</span></h3>
+                    <figure class="paper-figure task-figure">
+                        <img src="assets/figure 6.png"
+                             alt="Stacking task examples across Easy, Medium, and Hard difficulty levels, showing 3D packing puzzles of increasing container sizes."
+                             onerror="this.closest('.paper-figure').classList.add('figure-missing')">
+                    </figure>
+                    <p>
+                        Pack multiple irregularly-shaped 3D blocks into a fixed container by reasoning
+                        about shape compatibility, orientation constraints, and how early placements
+                        progressively restrict remaining free space. Difficulty scales with container
+                        size and piece complexity.
+                    </p>
+                    <ul class="task-stats">
+                        <li><strong>77</strong> instances</li>
+                        <li><span class="diff-dot diff-easy"></span> 10 Easy</li>
+                        <li><span class="diff-dot diff-medium"></span> 20 Medium</li>
+                        <li><span class="diff-dot diff-hard"></span> 47 Hard</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaderboard -->
+        <section id="leaderboard">
+            <h2>Leaderboard</h2>
+            <p class="section-desc">
+                Main evaluation results on <strong>CHAIN</strong> (Pass@1). Plan efficiency
+                metrics are computed only on solved tasks (lower is better).
+                Token and cost metrics are normalized by successful solves (higher is better).
+                Solved/Tokens is reported per 1M tokens.
+            </p>
+            <div class="table-wrap">
+                <table id="leaderboard-table">
+                    <thead id="leaderboard-head"></thead>
+                    <tbody id="leaderboard-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <p class="takeaway-callout">
+            Even the best-performing model (GPT-5.2) solves only 22.9% of tasks overall.
+            Interlocking puzzles remain at most 3.1% accuracy across all models, suggesting current
+            VLMs lack the ability to internalize geometric constraints and plan multi-step
+            physical manipulations.
+        </p>
+
+        <!-- Diagnosing -->
+        <section id="diagnosis">
+            <h2>Diagnosing Frontier Models on CHAIN</h2>
+            <p class="section-desc">
+                We use CHAIN's controlled interactive protocol to localize bottlenecks in perception,
+                planning, and execution as physical constraints tighten.
+            </p>
+            <div class="analysis-grid">
+                <div class="analysis-card">
+                    <h3>Constraint Tightness (Difficulty Stratification)</h3>
+                    <p class="section-desc">
+                        Accuracy (%) by difficulty tier. Stacking&ndash;Easy is largely solved, but
+                        performance collapses at Mid/Hard. Puzzle&ndash;Easy peaks at 10%, while
+                        Puzzle&ndash;Mid/Hard remain at 0%.
+                    </p>
+                    <div class="table-wrap">
+                        <table class="analysis-table">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Model</th>
+                                    <th colspan="3">Puzzle Acc &uarr;</th>
+                                    <th colspan="3">Stacking Acc &uarr;</th>
+                                </tr>
+                                <tr>
+                                    <th>Easy</th><th>Mid</th><th>Hard</th>
+                                    <th>Easy</th><th>Mid</th><th>Hard</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cell-model">GPT-5.2</td>
+                                    <td>10.0</td><td>0.0</td><td>0.0</td>
+                                    <td class="cell-best">100.0</td><td class="cell-best">55.0</td><td class="cell-best">6.3</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-model">Gemini-3-Pro</td>
+                                    <td>10.0</td><td>0.0</td><td>0.0</td>
+                                    <td>90.0</td><td>40.0</td><td class="cell-best">6.3</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-model">Claude-Sonnet-4.5</td>
+                                    <td>10.0</td><td>0.0</td><td>0.0</td>
+                                    <td class="cell-best">100.0</td><td>20.0</td><td>0.0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="analysis-card">
+                    <h3>Intermediate Feedback (Interactive vs. One-shot)</h3>
+                    <p class="section-desc">
+                        Multi-step interaction consistently outperforms one-shot solving.
+                        &Delta; = Interactive &minus; One-shot on overall accuracy.
+                    </p>
+                    <div class="table-wrap">
+                        <table class="analysis-table">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Model</th>
+                                    <th colspan="3">Interactive (%) &uarr;</th>
+                                    <th colspan="3">One-shot (%) &uarr;</th>
+                                    <th rowspan="2">&Delta;</th>
+                                </tr>
+                                <tr>
+                                    <th>Puzzle</th><th>Stack.</th><th>All</th>
+                                    <th>Puzzle</th><th>Stack.</th><th>All</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cell-model">GPT-5.2</td>
+                                    <td>3.1</td><td>31.2</td><td>22.9</td>
+                                    <td>0.0</td><td>9.1</td><td>7.1</td>
+                                    <td class="cell-delta-neg">&minus;15.8</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-model">Claude-Sonnet-4.5</td>
+                                    <td>3.1</td><td>18.2</td><td>13.8</td>
+                                    <td>0.0</td><td>10.3</td><td>8.1</td>
+                                    <td class="cell-delta-neg">&minus;5.7</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-model">Gemini-3-Pro</td>
+                                    <td>3.1</td><td>26.0</td><td>19.3</td>
+                                    <td>0.0</td><td>9.1</td><td>7.1</td>
+                                    <td class="cell-delta-neg">&minus;12.2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="analysis-card">
+                    <h3>Selection Signal (Reward Models vs. Verification)</h3>
+                    <p class="section-desc">
+                        Better selection helps, but gains saturate quickly. Reward-model reranking
+                        provides limited improvements relative to stronger verifier-style checks.
+                    </p>
+                    <div class="table-wrap">
+                        <table class="analysis-table">
+                            <thead>
+                                <tr>
+                                    <th>Strategy</th>
+                                    <th>All (%) &uarr;</th>
+                                    <th>&Delta; vs. Avg@4</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cell-model">Avg@4</td>
+                                    <td>9.3</td>
+                                    <td>&mdash;</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-model">Pass@1</td>
+                                    <td>9.4</td>
+                                    <td>+0.1</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-model">Pass@2</td>
+                                    <td class="cell-best">11.2</td>
+                                    <td>+1.9</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-model">Pass@4</td>
+                                    <td class="cell-best">11.2</td>
+                                    <td>+1.9</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-model">VLM Judge</td>
+                                    <td>10.3</td>
+                                    <td>+1.3</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-model">Reward Model</td>
+                                    <td>9.9</td>
+                                    <td>+0.6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="analysis-card">
+                    <h3>World Models (Diffusion Video)</h3>
+                    <p class="section-desc">
+                        Video generators often follow instructions superficially while violating
+                        interlocking and collision constraints. As complexity increases, failures can
+                        escalate to structural corruption and hallucinated additions/removals.
+                    </p>
+                    <p class="diagnosis-note">
+                        See the Diffusion Models previews in the Showcase above for representative
+                        failure cases.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <p class="takeaway-callout">
+            Multi-step interactive evaluation consistently outperforms one-shot solving, yet also
+            exposes cascading failures in long-horizon plans. Performance drops steeply from Easy
+            to Hard &mdash; Stacking collapses from ~100% to single digits, while Puzzle is stuck
+            at 0% for Mid/Hard and never exceeds 10% even on Easy.
+        </p>
+
+        <!-- Qualitative Failure Modes -->
+        <section id="failure-modes">
+            <h2>Failure Case Studies</h2>
+            <p class="section-desc">
+                Beyond aggregate metrics, case analysis reveals recurring patterns: trial-and-error
+                exploration with little constraint-guided progress; global spatial planning failures
+                that fragment remaining free volume and trigger costly backtracking; and early
+                commitments that snowball into dead-end configurations.
+            </p>
+            <div class="failure-grid">
+                <div class="failure-card" data-level-id="level_16_2x3x3_mid_002" data-pattern="trial">
+                    <h3 class="failure-persona">"Constraint-Free Trial-and-Error"</h3>
+                    <p class="failure-desc">
+                        When structural constraints are unclear, agents often probe by proposing many
+                        candidate placements without converging on a constraint-consistent plan, leading
+                        to little constraint-guided progress.
+                    </p>
+                    <div class="failure-viewer">
+                        <div class="failure-media">
+                            <img class="failure-img" alt="Auto-playing failure mode example">
+                            <div class="failure-step-label"></div>
+                        </div>
+                        <div class="failure-action"></div>
+                    </div>
+                </div>
+
+                <div class="failure-card" data-level-id="level_16_2x3x3_mid_002" data-pattern="pickup">
+                    <h3 class="failure-persona">"Costly Backtracking"</h3>
+                    <p class="failure-desc">
+                        In harder stacking regimes, locally reasonable placements can corner the solver
+                        into awkward residual space and fragment the remaining free volume. Agents then
+                        resort to costly removals and replanning, highlighting the need for global
+                        spatial planning and lookahead.
+                    </p>
+                    <div class="failure-viewer">
+                        <div class="failure-media">
+                            <img class="failure-img" alt="Auto-playing failure mode example">
+                            <div class="failure-step-label"></div>
+                        </div>
+                        <div class="failure-action"></div>
+                    </div>
+                </div>
+
+                <div class="failure-card" data-level-id="level_61_3x4x4_hard_005" data-pattern="late">
+                    <h3 class="failure-persona">"Dead-End Configurations"</h3>
+                    <p class="failure-desc">
+                        Hard instances require tightly coupled, long-horizon packing decisions. Even
+                        after several locally valid moves, early commitments can reduce clearance and
+                        leave residual space incompatible with the leftover pieces, producing dead-end
+                        states.
+                    </p>
+                    <div class="failure-viewer">
+                        <div class="failure-media">
+                            <img class="failure-img" alt="Auto-playing failure mode example">
+                            <div class="failure-step-label"></div>
+                        </div>
+                        <div class="failure-action"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Citation -->
+        <section id="citation">
+            <h2>Citation</h2>
+            <div class="bibtex-wrap">
+                <pre id="bibtex">@inproceedings{chain2026,
+  title     = {From Perception to Action: An Interactive Benchmark for Vision Reasoning},
+  author    = {Anonymous},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2026}
+}</pre>
+                <button id="copy-bibtex" class="btn-copy" title="Copy to clipboard">Copy</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <div id="overlay" class="overlay hidden" aria-hidden="true">
+        <div class="overlay-backdrop" data-overlay-close="true"></div>
+        <div class="overlay-panel" role="dialog" aria-modal="true" aria-label="Detail Viewer">
+            <div class="overlay-header">
+                <div id="overlay-title" class="overlay-title"></div>
+                <button id="overlay-close" class="overlay-close" type="button" aria-label="Close overlay">&times;</button>
+            </div>
+            <div id="overlay-body" class="overlay-body"></div>
+        </div>
+    </div>
+
+    <template id="vlm-viewer-template">
+        <div id="viewer-container">
+            <div class="viewer-layout">
+                <div class="viewer-main">
+                    <div id="step-image-container">
+                        <img id="step-image" alt="Step visualization">
+                        <div id="image-loading" class="hidden">Loading&hellip;</div>
+                    </div>
+                    <div class="slider-row">
+                        <button id="btn-prev" class="slider-btn" title="Previous step" type="button">&lsaquo;</button>
+                        <input type="range" id="step-slider" min="0" max="0" value="0">
+                        <button id="btn-next" class="slider-btn" title="Next step" type="button">&rsaquo;</button>
+                        <span id="step-label">Step 0 / 0</span>
+                    </div>
+                </div>
+                <div class="viewer-reasoning">
+                    <div class="reasoning-header">
+                        Agent Trace &mdash; <span id="reasoning-step-label">Step 0</span>
+                    </div>
+                    <div id="reasoning-content"></div>
+                </div>
+            </div>
+            <div id="metrics-bar">
+                <dl id="metrics-panel"></dl>
+            </div>
+            <p class="viewer-footnote">
+                <code>place</code> / <code>pickup</code> / <code>state</code> are tool calls executed by the agent
+                in the environment. <code>place</code> attempts to position a piece;
+                <code>pickup</code> picks up a piece;
+                <code>state</code> queries the current environment state.
+            </p>
+        </div>
+    </template>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

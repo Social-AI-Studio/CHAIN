@@ -1,0 +1,20 @@
+Experiment Summary: luban_disassembly_test_20251127_041055
+============================================================
+Total Steps: 5
+Actions Taken: 5
+Errors Occurred: 0
+Images Saved: 6
+
+Step-by-step breakdown:
+------------------------------
+Step 0: Initial setup
+Step 1: Action 'manipulate_piece'
+  Result: {'status': 'success', 'message': 'Moved ID 2: X=-12, Y=0, Z=0 steps. Rotated 0 steps (none).', 'settle_steps': 2000, 'overlap_resolved': 543}
+Step 2: Action 'manipulate_piece'
+  Result: {'status': 'success', 'message': 'Moved ID 3: X=0, Y=0, Z=12 steps. Rotated 0 steps (none).', 'settle_steps': 2000, 'overlap_resolved': 534}
+Step 3: Action 'manipulate_piece'
+  Result: {'status': 'success', 'message': 'Moved ID 2: X=-12, Y=0, Z=0 steps. Rotated 0 steps (none).', 'settle_steps': 2000, 'overlap_resolved': 390}
+Step 4: Action 'manipulate_piece'
+  Result: {'status': 'success', 'message': 'Moved ID 2: X=-12, Y=0, Z=0 steps. Rotated 0 steps (none).', 'settle_steps': 2000, 'overlap_resolved': 275}
+Step 5: Action 'manipulate_piece'
+  Result: {'status': 'success', 'message': 'Moved ID 2: X=-15, Y=0, Z=0 steps. Rotated 0 steps (none).', 'settle_steps': 634, 'overlap_resolved': 209}

@@ -1,0 +1,2 @@
+# 你的任务是首先理解熟悉代码库，通过/mnt/moonfs/wuyuhao-m2/wyh/VisualReasonBench/examples/puzzle_quick.py 这个启动程序
+#  然后我希望我能直接在jupyter note （/mnt/moonfs/wuyuhao-m2/wyh/VisualReasonBench/notebooks）中进行环境的交互 和 使用  - 也就是 提取 puzzle_quick.py 中使用其中的load 环境 和 agent 于 环境交互部分（但是我可以使用我定义的output） 也需要保存 png图片 -- 请写一个详细的jupyter吧

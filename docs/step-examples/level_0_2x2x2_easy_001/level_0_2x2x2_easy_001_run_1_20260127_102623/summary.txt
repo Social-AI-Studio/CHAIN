@@ -1,0 +1,14 @@
+Experiment Summary: level_0_2x2x2_easy_001_run_1_20260127_102623
+============================================================
+Total Steps: 2
+Actions Taken: 2
+Errors Occurred: 0
+Images Saved: 3
+
+Step-by-step breakdown:
+------------------------------
+Step 0: Initial setup
+Step 1: Action 'place'
+  Result: {'status': 'success', 'message': 'Piece placed successfully', 'transform': {'rotation': 2, 'position': (1, 1, 1)}}
+Step 2: Action 'place'
+  Result: {'status': 'success', 'message': 'Piece placed successfully', 'transform': {'rotation': 2, 'position': (1, 1, 2)}}
