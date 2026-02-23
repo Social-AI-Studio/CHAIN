@@ -1,0 +1,61 @@
+{
+  "model_name": "gpt-4o",
+  "evaluation_timestamp": "2025-09-12T11:08:34.109699",
+  "summary": {
+    "total_tasks": 1,
+    "successful_tasks": 0,
+    "accuracy": 0.0,
+    "pass_at_k": {
+      "1": 0.0,
+      "3": 0.0,
+      "5": 0.0
+    },
+    "distance_to_optimal": Infinity,
+    "token_efficiency": Infinity
+  },
+  "detailed_metrics": {
+    "step_efficiency": Infinity,
+    "time_efficiency": Infinity,
+    "success_by_difficulty": {
+      "easy": 0.0
+    },
+    "success_by_task_type": {
+      "domino_dont_fall": 0.0
+    },
+    "trajectory_analysis": {
+      "avg_trajectory_length": 5.0,
+      "common_first_actions": {
+        "reset": 1.0
+      },
+      "common_failure_points": {
+        "step_5": 1.0
+      },
+      "action_sequence_analysis": {}
+    },
+    "total_tasks": 1,
+    "successful_tasks": 0,
+    "failed_tasks": 1
+  },
+  "task_breakdown": [
+    {
+      "task_id": "domino_dont_fall_1757646469",
+      "task_type": "domino_dont_fall",
+      "success": false,
+      "total_steps": 3,
+      "execution_time": 19.524369716644287,
+      "metadata": {
+        "difficulty": "easy",
+        "optimal_steps": 4,
+        "total_tokens": 7466,
+        "agent_model": "gpt-4o",
+        "judge_metrics": {
+          "judge_success": false,
+          "judge_confidence": 0.0,
+          "judge_reasoning": "Evaluation failed: Error code: 403 - {'error': {'message': 'Provider returned error', 'code': 403, 'metadata': {'raw': '{\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}', 'provider_name': 'OpenAI'}}, 'user_id': 'org_2yMoMUllKtA0yoxa8HuXSHvUnmE'}"
+        }
+      },
+      "trajectory_length": 5,
+      "error_message": null
+    }
+  ]
+}

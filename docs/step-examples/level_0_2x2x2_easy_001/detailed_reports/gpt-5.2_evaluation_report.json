@@ -1,0 +1,67 @@
+{
+  "model_name": "gpt-5.2",
+  "evaluation_timestamp": "2026-01-27T17:47:41.667600",
+  "summary": {
+    "total_tasks": 1,
+    "successful_tasks": 1,
+    "accuracy": 1.0,
+    "pass_at_k": {
+      "1": 1.0,
+      "3": 1.0,
+      "5": 1.0
+    },
+    "distance_to_optimal": 0.0,
+    "token_efficiency": 5055.0
+  },
+  "detailed_metrics": {
+    "avg_at_k": {
+      "1": 1.0,
+      "3": 1.0,
+      "5": 1.0
+    },
+    "tokens_per_step": 2527.5,
+    "cost_total": 0.5055,
+    "usd_per_solved": 0.5055,
+    "step_efficiency": 2.0,
+    "time_efficiency": 21.510009050369263,
+    "success_by_difficulty": {
+      "easy": 1.0
+    },
+    "success_by_task_type": {
+      "stacking_game": 1.0
+    },
+    "trajectory_analysis": {
+      "avg_trajectory_length": 3.0,
+      "common_first_actions": {
+        "reset": 1.0
+      },
+      "common_failure_points": {},
+      "action_sequence_analysis": {}
+    },
+    "total_tasks": 1,
+    "successful_tasks": 1,
+    "failed_tasks": 0
+  },
+  "task_breakdown": [
+    {
+      "task_id": "stacking_game_1769480783",
+      "task_type": "stacking_game",
+      "success": true,
+      "total_steps": 2,
+      "execution_time": 21.510009050369263,
+      "metadata": {
+        "difficulty": "easy",
+        "optimal_steps": 2,
+        "total_tokens": 5055,
+        "agent_model": "gpt-5.2",
+        "is_complete": true,
+        "group_key": "level_0",
+        "level_index": 0,
+        "env_id": 1,
+        "config_path": "eval_configs/stacking.yaml"
+      },
+      "trajectory_length": 3,
+      "error_message": null
+    }
+  ]
+}

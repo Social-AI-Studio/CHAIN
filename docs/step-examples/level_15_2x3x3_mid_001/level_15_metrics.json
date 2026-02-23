@@ -1,0 +1,17 @@
+{
+  "accuracy": 1.0,
+  "pass_at_k": {
+    "1": 1.0
+  },
+  "avg_at_k": {
+    "1": 1.0
+  },
+  "avg_steps_solved": 6.0,
+  "distance_to_optimal": 0.5,
+  "tokens_per_solved": 31714.0,
+  "tokens_per_step": 5285.666666666667,
+  "cost_total": 3.1714,
+  "usd_per_solved": 3.1714,
+  "total_tasks": 1,
+  "solved_tasks": 1
+}

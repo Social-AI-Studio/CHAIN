@@ -205,5 +205,3 @@ Stacking_scaling/puzzles_full_10/2x3x3/_signatures/bd5fa354726b176bd3e4c1d6fdb87
 Stacking_scaling/puzzles_full_10/2x3x3/_signatures/e9745972dd02427d17be8e8509c90e0e64611484.marker
 
 # Exclude JSON and PNG files
-*.json
-*.png

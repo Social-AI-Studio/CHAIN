@@ -1,0 +1,19 @@
+{
+  "task_info": {
+    "Task ID": "3x3_stacking_1759979492",
+    "Task Type": "3x3_stacking",
+    "Task Name": "3x3_stacking_puzzle",
+    "Difficulty": "medium",
+    "Number of pieces": 9,
+    "Puzzle size": [
+      3,
+      3
+    ],
+    "Piece size": 0.08,
+    "Current step": "1/10",
+    "Optimal steps": 10
+  },
+  "steps": 1,
+  "max_steps": 10,
+  "image_count": 1
+}

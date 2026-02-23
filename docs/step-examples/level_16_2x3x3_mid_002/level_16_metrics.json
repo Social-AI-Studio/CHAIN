@@ -1,0 +1,17 @@
+{
+  "accuracy": 0.0,
+  "pass_at_k": {
+    "1": 0.0
+  },
+  "avg_at_k": {
+    "1": 0.0
+  },
+  "avg_steps_solved": Infinity,
+  "distance_to_optimal": Infinity,
+  "tokens_per_solved": Infinity,
+  "tokens_per_step": 16238.2,
+  "cost_total": 48.714600000000004,
+  "usd_per_solved": Infinity,
+  "total_tasks": 1,
+  "solved_tasks": 0
+}

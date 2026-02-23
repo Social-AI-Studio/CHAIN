@@ -1,0 +1,55 @@
+{
+  "model_name": "gpt-5-mini",
+  "evaluation_timestamp": "2025-11-27T04:14:36.627631",
+  "summary": {
+    "total_tasks": 1,
+    "successful_tasks": 0,
+    "accuracy": 0.0,
+    "pass_at_k": {
+      "1": 0.0,
+      "3": 0.0,
+      "5": 0.0
+    },
+    "distance_to_optimal": Infinity,
+    "token_efficiency": Infinity
+  },
+  "detailed_metrics": {
+    "step_efficiency": Infinity,
+    "time_efficiency": Infinity,
+    "success_by_difficulty": {
+      "easy": 0.0
+    },
+    "success_by_task_type": {
+      "luban_disassembly": 0.0
+    },
+    "trajectory_analysis": {
+      "avg_trajectory_length": 6.0,
+      "common_first_actions": {
+        "reset": 1.0
+      },
+      "common_failure_points": {
+        "step_6": 1.0
+      },
+      "action_sequence_analysis": {}
+    },
+    "total_tasks": 1,
+    "successful_tasks": 0,
+    "failed_tasks": 1
+  },
+  "task_breakdown": [
+    {
+      "task_id": "luban_disassembly_1764187855",
+      "task_type": "luban_disassembly",
+      "success": false,
+      "total_steps": 6,
+      "execution_time": 212.00210452079773,
+      "metadata": {
+        "difficulty": "easy",
+        "total_tokens": 37269,
+        "agent_model": "gpt-5-mini"
+      },
+      "trajectory_length": 6,
+      "error_message": "Token count exceeded max content size: 37269, Max: 32000"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "note": "All values from Table 1 of the CHAIN paper. Update as needed.",
+  "column_groups": [
+    {
+      "label": "Task Success",
+      "columns": ["pass_at_1", "succ_task", "puzzle", "stacking"]
+    },
+    {
+      "label": "Plan Efficiency (Solved)",
+      "columns": ["avg_steps", "dist2opt", "norm_dist"]
+    },
+    {
+      "label": "Token & Cost",
+      "columns": ["solved_tokens", "solved_usd"]
+    }
+  ],
+  "columns": [
+    { "key": "model",         "label": "Model",           "higher_better": null },
+    { "key": "pass_at_1",     "label": "Pass@1",          "higher_better": true,  "format": "percent" },
+    { "key": "succ_task",     "label": "Succ.Task",       "higher_better": true,  "format": "int" },
+    { "key": "puzzle",        "label": "Puzzle",          "higher_better": true,  "format": "percent" },
+    { "key": "stacking",      "label": "Stacking",        "higher_better": true,  "format": "percent" },
+    { "key": "avg_steps",     "label": "AvgSteps",        "higher_better": false, "format": "float" },
+    { "key": "dist2opt",      "label": "Dist2Opt",        "higher_better": false, "format": "float" },
+    { "key": "norm_dist",     "label": "N.Dist",          "higher_better": false, "format": "float" },
+    { "key": "solved_tokens", "label": "Solved/Tokens",   "higher_better": true,  "format": "float" },
+    { "key": "solved_usd",    "label": "Solved/USD",      "higher_better": true,  "format": "float" }
+  ],
+  "sections": [
+    {
+      "label": "Closed-source Models",
+      "rows": [
+        { "model": "GPT-5.2",           "pass_at_1": 22.9, "succ_task": 25, "puzzle": 3.1, "stacking": 31.2, "avg_steps": 9.6,  "dist2opt": 1.43, "norm_dist": 0.50, "solved_tokens": 10.1, "solved_usd": 0.10 },
+        { "model": "GPT-5-mini",        "pass_at_1": 11.0, "succ_task": 12, "puzzle": 3.1, "stacking": 14.3, "avg_steps": 6.8,  "dist2opt": 1.08, "norm_dist": 0.57, "solved_tokens": 19.3, "solved_usd": 0.19 },
+        { "model": "OpenAI-o3",         "pass_at_1": 10.1, "succ_task": 11, "puzzle": 3.1, "stacking": 13.0, "avg_steps": 6.1,  "dist2opt": 0.81, "norm_dist": 0.37, "solved_tokens": 26.1, "solved_usd": 0.26 },
+        { "model": "Claude-Opus-4.5",   "pass_at_1": 15.6, "succ_task": 17, "puzzle": 3.1, "stacking": 20.8, "avg_steps": 8.0,  "dist2opt": 1.42, "norm_dist": 0.63, "solved_tokens": 17.8, "solved_usd": 0.17 },
+        { "model": "Claude-Sonnet-4.5", "pass_at_1": 13.8, "succ_task": 15, "puzzle": 3.1, "stacking": 18.2, "avg_steps": 7.1,  "dist2opt": 1.02, "norm_dist": 0.51, "solved_tokens": 29.0, "solved_usd": 0.29 },
+        { "model": "Gemini-3-Pro",      "pass_at_1": 19.3, "succ_task": 21, "puzzle": 3.1, "stacking": 26.0, "avg_steps": 10.4, "dist2opt": 2.38, "norm_dist": 1.29, "solved_tokens": 4.63, "solved_usd": 0.04 },
+        { "model": "Gemini-3-Flash",    "pass_at_1": 11.9, "succ_task": 13, "puzzle": 3.1, "stacking": 15.6, "avg_steps": 6.1,  "dist2opt": 0.84, "norm_dist": 0.46, "solved_tokens": 36.9, "solved_usd": 0.36 },
+        { "model": "Seed-1.6",          "pass_at_1": 10.1, "succ_task": 11, "puzzle": 3.1, "stacking": 13.0, "avg_steps": 5.5,  "dist2opt": 0.73, "norm_dist": 0.39, "solved_tokens": 23.9, "solved_usd": 0.23 },
+        { "model": "Seed-1.6-Flash",    "pass_at_1": 7.3,  "succ_task": 8,  "puzzle": 0.0, "stacking": 10.4, "avg_steps": 4.5,  "dist2opt": 0.23, "norm_dist": 0.07, "solved_tokens": 32.4, "solved_usd": 0.32 }
+      ]
+    },
+    {
+      "label": "Open-source Models",
+      "rows": [
+        { "model": "Kimi-k2.5",                 "pass_at_1": 13.8, "succ_task": 15, "puzzle": 0.0, "stacking": 19.5, "avg_steps": 7.0,  "dist2opt": 0.71, "norm_dist": 0.19, "solved_tokens": 6.2,  "solved_usd": 0.06 },
+        { "model": "GLM-4.6V",                  "pass_at_1": 7.3,  "succ_task": 8,  "puzzle": 0.0, "stacking": 10.4, "avg_steps": 6.5,  "dist2opt": 0.92, "norm_dist": 0.39, "solved_tokens": 22.6, "solved_usd": 0.22 },
+        { "model": "Qwen3-VL-235B-A22B-Thk.",   "pass_at_1": 9.2,  "succ_task": 10, "puzzle": 3.1, "stacking": 11.7, "avg_steps": 3.8,  "dist2opt": 0.33, "norm_dist": 0.31, "solved_tokens": 40.7, "solved_usd": 0.40 },
+        { "model": "Qwen3-VL-30B-A3B-Thk.",     "pass_at_1": 10.1, "succ_task": 11, "puzzle": 0.0, "stacking": 14.3, "avg_steps": 5.5,  "dist2opt": 0.40, "norm_dist": 0.11, "solved_tokens": 18.8, "solved_usd": 0.18 },
+        { "model": "Qwen3-VL-8B-Thinking",      "pass_at_1": 8.3,  "succ_task": 9,  "puzzle": 0.0, "stacking": 11.7, "avg_steps": 3.8,  "dist2opt": 0.03, "norm_dist": 0.01, "solved_tokens": 19.8, "solved_usd": 0.19 },
+        { "model": "Qwen3-VL-235B-A22B-Inst",   "pass_at_1": 8.3,  "succ_task": 9,  "puzzle": 3.1, "stacking": 10.4, "avg_steps": 3.7,  "dist2opt": 0.13, "norm_dist": 0.11, "solved_tokens": 66.8, "solved_usd": 0.66 },
+        { "model": "Qwen3-VL-30B-A3B-Inst",     "pass_at_1": 3.7,  "succ_task": 4,  "puzzle": 3.1, "stacking": 3.9,  "avg_steps": 4.8,  "dist2opt": 1.30, "norm_dist": 1.14, "solved_tokens": 51.4, "solved_usd": 0.51 }
+      ]
+    }
+  ]
+}

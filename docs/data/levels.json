@@ -1,0 +1,44 @@
+{
+  "levels": [
+    {
+      "id": "level_0_2x2x2_easy_001",
+      "name": "Level 0",
+      "subtitle": "2\u00d72\u00d72 Easy",
+      "difficulty": "easy",
+      "box_size": [2, 2, 2],
+      "level_num": 0,
+      "run_dir": "level_0_2x2x2_easy_001_run_1_20260127_102623",
+      "total_steps": 3
+    },
+    {
+      "id": "level_15_2x3x3_mid_001",
+      "name": "Level 15",
+      "subtitle": "2\u00d73\u00d73 Medium",
+      "difficulty": "medium",
+      "box_size": [2, 3, 3],
+      "level_num": 15,
+      "run_dir": "level_15_2x3x3_mid_001_run_1_20260127_102914",
+      "total_steps": 7
+    },
+    {
+      "id": "level_16_2x3x3_mid_002",
+      "name": "Level 16",
+      "subtitle": "2\u00d73\u00d73 Medium",
+      "difficulty": "medium",
+      "box_size": [2, 3, 3],
+      "level_num": 16,
+      "run_dir": "level_16_2x3x3_mid_002_run_1_20260127_103215",
+      "total_steps": 31
+    },
+    {
+      "id": "level_61_3x4x4_hard_005",
+      "name": "Level 61",
+      "subtitle": "3\u00d74\u00d74 Hard",
+      "difficulty": "hard",
+      "box_size": [3, 4, 4],
+      "level_num": 61,
+      "run_dir": "level_61_3x4x4_hard_005_run_1_20260127_154446",
+      "total_steps": 31
+    }
+  ]
+}
