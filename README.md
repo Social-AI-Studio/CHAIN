@@ -6,9 +6,9 @@
 
 > **C**ausal **H**ierarchy of **A**ctions and **IN**teractions — An interactive 3D, physics-driven benchmark for evaluating whether vision-language and diffusion models can reason about physical structure and execute action sequences grounded in causal constraints.
 
-[![Paper](https://img.shields.io/badge/📄-Paper-blue)](#citation)
+[![Website](https://img.shields.io/badge/🌐-Website-blue)](https://social-ai-studio.github.io/CHAIN/)
+[![Paper](https://img.shields.io/badge/📄-Paper-orange)](#citation)
 [![Code](https://img.shields.io/badge/💻-Code-green)](https://github.com/Social-AI-Studio/CHAIN)
-[![Dataset](https://img.shields.io/badge/📦-Dataset-orange)](#)
 
 **Authors:** Yihuai Lan\*, Maojia Song\*, Yuhao Wu\*<sup>#</sup>, Lei Wang†, Zhiqiang Hu, Yao Xiao, Heng Zhou, Weihua Zheng, Dylan Raharja, Soujanya Poria†, Roy Ka-Wei Lee†
 
