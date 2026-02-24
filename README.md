@@ -286,7 +286,6 @@ The Luban environment connects to a Unity process via socket. Make sure the Unit
   author    = {Lan, Yihuai and Song, Maojia and Wu, Yuhao and Wang, Lei and Hu, Zhiqiang and
                Xiao, Yao and Zhou, Heng and Zheng, Weihua and Raharja, Dylan and
                Poria, Soujanya and Lee, Roy Ka-Wei},
-  booktitle = {International Conference on Machine Learning (ICML)},
   year      = {2026}
 }
 ```
