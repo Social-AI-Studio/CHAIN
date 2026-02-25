@@ -281,12 +281,14 @@ The Luban environment connects to a Unity process via socket. Make sure the Unit
 ## Citation
 
 ```bibtex
-@inproceedings{chain2026,
-  title     = {From Perception to Action: An Interactive Benchmark for Vision Reasoning},
-  author    = {Lan, Yihuai and Song, Maojia and Wu, Yuhao and Wang, Lei and Hu, Zhiqiang and
-               Xiao, Yao and Zhou, Heng and Zheng, Weihua and Raharja, Dylan and
-               Poria, Soujanya and Lee, Roy Ka-Wei},
-  year      = {2026}
+@misc{wu2026perceptionactioninteractivebenchmark,
+      title={From Perception to Action: An Interactive Benchmark for Vision Reasoning}, 
+      author={Yuhao Wu and Maojia Song and Yihuai Lan and Lei Wang and Zhiqiang Hu and Yao Xiao and Heng Zhou and Weihua Zheng and Dylan Raharja and Soujanya Poria and Roy Ka-Wei Lee},
+      year={2026},
+      eprint={2602.21015},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2602.21015}, 
 }
 ```
 
