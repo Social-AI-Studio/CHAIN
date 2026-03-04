@@ -128,7 +128,7 @@ class StackingGameTask(PhysicsTask):
         instruction = f"""
 You are solving a 3D packing puzzle.
 
-**Goal:** Pack every piece into the **{cfg.puzzle_size}** box for puzzle **`{cfg.puzzle_id}`**. You must fill **all {len(self.environment.game_state.spec.box)} cells** with **no collisions** and **no out-of-bounds** placements.
+**Goal:** Pack every piece into the **{cfg.puzzle_size}** box for puzzle **`{cfg.puzzle_id}`**. You must fill **all {self.environment.game_state.spec.box[0] * self.environment.game_state.spec.box[1] * self.environment.game_state.spec.box[2]} cells** with **no collisions** and **no out-of-bounds** placements.
 
 **Critical rules:**
 
